@@ -4,7 +4,7 @@ const wish = document.getElementById('wish');
 const photo = document.getElementById('photo');
 
 const soundEffect = document.getElementById('sound-effect');
-message.innerHTML = 'Your birthday is in:';
+
 function updateCountdown() {
   const now = new Date();
   const birthday = new Date('2023-05-08');
@@ -24,10 +24,10 @@ function updateCountdown() {
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
   countdown.innerHTML = `
-    <span class="countdown-item">${days}d</span><br><br>
-    <span class="countdown-item">${hours}h</span><br><br>
-    <span class="countdown-item">${minutes}m</span><br><br>
-    <span class="countdown-item">${seconds}s</span>
+    <span class="countdown-item">${days}d</span><br>
+    <span class="countdown-item">${hours}h</span><br>
+    <span class="countdown-item">${minutes}m</span><br>
+    <span class="countdown-item">${seconds}s</span><br>
   `;
 }
 
