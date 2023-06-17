@@ -1,0 +1,143 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Markazi Text', serif; 
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
+    margin-left: 5%; 
+    margin-right: 5%;
+    
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    /*background-color:#FF7722; */
+    background-color: #ECC5C0;
+    margin-top: 2rem;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+nav li:hover {
+    background-color: #FFE6E8;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.sec_main {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+.art_1 {
+    text-align: center;
+    margin-top: 2rem;
+    background-image: url(img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.art_1>h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+
+.art_1>p {
+    color: white;
+    font-size: 2rem;
+    padding-top: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sec_main article{
+    background-color: bisque;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.sec_main h1 {
+    font-size: 4rem;
+}
+
+.sec_main img {
+    max-width: 90%;
+    max-height: 100%;
+}
+
+.sec_main p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: pink;
+    text-transform: uppercase;
+    font-weight: 750;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    transition: all .5s ease;
+}
+
+button:hover {
+    background-color: azure;
+    color: black;
+    text-decoration: underline;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+button:active {
+    transform: translateY(10px);
+    transition: 200ms;
+}
+footer {
+    display: flex;
+    margin-top: 3rem;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer div p {
+    text-align: end;
+}
