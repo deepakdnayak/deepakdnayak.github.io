@@ -9,49 +9,73 @@
 <body>
     <h1 class="text-center fw-bold text-bg-secondary p-3">Online Application Forms</h1>
     <h1 class="text-center p-3">Outpass Form</h1>
-    <form class="row m-3 g-3">
+    <form class="row m-3 g-3" action="mailto:deepakdnayak555@gmail.com?&subject=Outpass Application" method="post" enctype="text/plain">
         <div class="col-md-3">
             <label for="firstname" class="form-label">First Name :</label>
-            <input type="text" class="form-control" id="firstname" placeholder="First name" required>
+            <input type="text" class="form-control" name="First Name " id="firstname" placeholder="First name" required>
         </div>
         <div class="col-md-3">
             <label for="lastname" class="form-label">Last Name :</label>
-            <input type="text" class="form-control" id="lastname" placeholder="Last name" required>
+            <input type="text" class="form-control" name="Last Name " id="lastname" placeholder="Last name" required>
         </div>
         <div class="col-md-3">
             <label for="usn" class="form-label">USN :</label>
-            <input type="text" class="form-control" id="usn" placeholder="4CB___________" required>
+            <input type="text" class="form-control" name="USN " id="usn" placeholder="4CB___________" required>
         </div>
         <div class="col-md-3">
             <label for="roomnumber" class="form-label">Room Number :</label>
-            <input type="text" class="form-control" id="roomnumber" placeholder="Room Number" required>
+            <input type="text" class="form-control" name="Room Number " id="roomnumber" placeholder="Room Number" required>
         </div>
         <div class="col-md-3">
             <label class="form-label" for="leavetime">Leave Time :</label>
-            <input type="time" class="form-control" id="leavetime" required>
+            <input type="time" class="form-control" name="Leave Time " id="leavetime" required>
         </div>
         <div class="col-md-3">
             <label class="form-label" for="leavedate">Leave Date :</label>
-            <input type="date" class="form-control" id="leavedate" required>
+            <input type="date" class="form-control" name="Leave Date " id="leavedate" required>
         </div>
         <div class="col-md-3">
             <label class="form-label" for="returntime">Return Time :</label>
-            <input type="time" class="form-control" id="returntime" required>
+            <input type="time" class="form-control" name="Return Time " id="returntime" required>
         </div>
         <div class="col-md-3">
             <label class="form-label" for="returndate">Return Date :</label>
-            <input type="date" class="form-control" id="returndate" required>
+            <input type="date" class="form-control" name="Return Date " id="returndate" required>
+        </div>
+        <div class="col-md-3">
+            <label for="hostelname" class="form-label">Hostel Name :</label>
+            <input type="text" class="form-control" name="Hostel Name " id="hostelname" placeholder="Hostel Name" required>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label" for="phoneno">Phone no. :</label>
+            <input type="tel" placeholder="+91" class="form-control" name="Phone No. " id="phoneno" maxlength="10" required>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label" for="aphoneno">Alternate Phone no. :</label>
+            <input type="tel" placeholder="+91" class="form-control" name="Alternate Phone No. " id="aphoneno" maxlength="10" required>
         </div>
         <div class="input-group col-md-3">
-            <label class="input-group-text" for="photo">Add your Image</label>
+            <label class="input-group-text" name="Self Image " for="photo">Add your Image</label>
             <input type="file" class="form-control" id="photo" required>
           </div>
         <div class="mb-3">
             <label for="reason" class="form-label">Reason :</label>
-            <textarea class="form-control" id="reason" rows="5" required></textarea>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Reason " id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Academic
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Reason " id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Presonal
+                    </label>
+                </div>
+            <textarea class="form-control" id="reason" name="Reason Desc " rows="5" required></textarea>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="Bus Pass Required " value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
               Bus Pass Required
             </label>
