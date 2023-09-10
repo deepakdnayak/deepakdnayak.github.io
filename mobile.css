@@ -71,12 +71,20 @@ body>div:nth-of-type(2) {
     padding-bottom: 20px;
     margin-bottom: 40px;
 }
-.col>h5,.col>p,.col>a {
+.col>h5,.col>p {
   margin-left: 15px;
 }
-.col>a:hover {
+
+.col>a:last-of-type {
+  margin-left: 15px;
   color: rgb(11, 126, 234);
 }
+
+.col>a:last-of-type:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .pimg {
     width: 95%;
     margin-left: 2.5%;

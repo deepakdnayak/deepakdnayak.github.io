@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 425px)" href="laptop.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>SGPA Calculator</h1>
-    <p>Enter your marks to calculate your SGPA</p>
             <div>
+                <h1>SGPA Calculator</h1>
+                <p>Enter your marks to calculate your SGPA</p>
+
                 <label for="4c1">Maths :</label>
                 <input type="number" name="4c1" id="4c1"><br>
 
@@ -37,6 +39,6 @@
 
                 <button id="submit" onclick="calcSgpa()">Submit</button>
             </div>
-    <p>Your SGPA is : <span id="sgpa">0.0<span></p>
+    <p class="result">Your SGPA is : <span id="sgpa">0.0<span></p>
 </body>
 </html>
