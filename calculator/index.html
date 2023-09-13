@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (max-width: 425px)" href="mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 425px)" href="laptop.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <p class="head">Calculator</p>
+        <div class="calc">
+            <form name="c">
+                <input type="text" name="display" id="display"><br><br>
+
+                <input type="button" value="(" id="fo" onclick="c.display.value+='('">
+                <input type="button" value=")" id="fc" onclick="c.display.value+=')'">
+                <input type="button" value="C" id="C" onclick="c.display.value = ''">
+                <input type="button" value="%" id="perc" onclick="c.display.value = eval(c.display.value)*100+'%'"><br>
+
+                <input type="button" value="7" id="b7" onclick="c.display.value+='7'">
+                <input type="button" value="8" id="b8" onclick="c.display.value+='8'">
+                <input type="button" value="9" id="b9" onclick="c.display.value+='9'">
+                <input type="button" value="x" id="star" onclick="c.display.value+='*'"><br>
+
+                <input type="button" value="4" id="b4" onclick="c.display.value+='4'">
+                <input type="button" value="5" id="b5" onclick="c.display.value+='5'">
+                <input type="button" value="6" id="b6" onclick="c.display.value+='6'">
+                <input type="button" value="-" id="minus" onclick="c.display.value+='-'"><br>
+
+                <input type="button" value="1" id="b1" onclick="c.display.value+='1'">
+                <input type="button" value="2" id="b2" onclick="c.display.value+='2'">
+                <input type="button" value="3" id="b3" onclick="c.display.value+='3'">
+                <input type="button" value="+" id="plus" onclick="c.display.value+='+'"><br>
+
+                <input type="button" value="0" id="b0" onclick="c.display.value+='0'">
+                <input type="button" value="." id="dot" onclick="c.display.value+='.'">
+                <input type="button" value="/" id="slash" onclick="c.display.value+='/'">
+                <input type="button" value="=" id="equal" onclick="c.display.value = eval(c.display.value)">
+            </form>
+        </div>
+    </body>
+</html>
