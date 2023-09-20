@@ -16,8 +16,13 @@
 
                 <input type="button" value="(" id="fo" onclick="c.display.value+='('">
                 <input type="button" value=")" id="fc" onclick="c.display.value+=')'">
-                <input type="button" value="C" id="C" onclick="c.display.value = ''">
-                <input type="button" value="%" id="perc" onclick="c.display.value = eval(c.display.value)*100+'%'"><br>
+                <input type="button" value="%" id="perc" onclick="c.display.value = eval(c.display.value)*100+'%'">
+                <input type="button" value="AC" id="AC" style="background-color: rgb(80, 78, 90);" onclick="c.display.value = ''"><br>
+                
+                <input type="button" value="x&sup2;" id="square" onclick="c.display.value = eval(c.display.value)**2">
+                <input type="button" value="x&sup3;" id="cube" onclick="c.display.value = eval(c.display.value)**3">
+                <input type="button" value="&Sqrt;x" id="squareroot" onclick="c.display.value = eval(c.display.value)**(1/2)">
+                <input type="button" value="&#8731;x" id="cuberoot" onclick="c.display.value = Math.round((c.display.value)**(1/3))"><br>
 
                 <input type="button" value="7" id="b7" onclick="c.display.value+='7'">
                 <input type="button" value="8" id="b8" onclick="c.display.value+='8'">
