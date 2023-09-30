@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (max-width: 425px)" href="mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 425px)" href="laptop.css">
+        
+        <title>MoI Calculator</title>
+
+        <meta name="description" content="MoI Calculator">
+        <meta name="author" content="Calculator">
+
+        <meta property="og:title" content="M.O.I">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://deepakdnayak.github.io/">
+        <meta property="og:description" content="MoI Calculator">
+        <meta property="og:image" content="ogimage.png">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Calculator">
+
+        <link rel="icon" href="favicon.png">
+    </head>
+    <body>
+        <header>
+            <p>Moment of Inertia Calculator</p>
+        </header>
+        <ol>
+            <li>Enter the components as following:</li>
+            <ul>
+                <li>Rectangle = R </li>
+                <li>Triangle = T</li>
+                <li>Circle = C</li>
+                <li>Semi-circle = SC</li>
+                <li>Quarter-Circle = QC</li>
+            </ul>
+            <li>Add 'N' as prefix for Unshaded areas [ Unshaded Circle = NC ]</li>
+            <li>Respond to the page with Y or N when Semi-Circle is included.</li>
+            <li>Ensure that base is the Horizontal spanned and Height is the vertical spanned length of figure.</li>
+        </ol>
+        <main>
+            <div>
+            <table>
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Component</th>
+                    <th>Base</th>
+                    <th>Height</th>
+                    <th>X value</th>
+                    <th>Y value</th>
+                </tr>
+                <tr>
+                    <td id="sl1">1</td>
+                    <td><input type="text" name="comp1" id="comp1"></td>
+                    <td><input type="number" name="base1" id="base1"></td>
+                    <td><input type="number" name="height1" id="height1"></td>
+                    <td><input type="number" name="xval1" id="xval1"></td>
+                    <td><input type="number" name="yval1" id="yval1"></td>                    
+                </tr>
+                <tr>
+                    <td id="sl1">2</td>
+                    <td><input type="text" name="comp2" id="comp2"></td>
+                    <td><input type="number" name="base2" id="base2"></td>
+                    <td><input type="number" name="height2" id="height2"></td>
+                    <td><input type="number" name="xval2" id="xval2"></td>
+                    <td><input type="number" name="yval2" id="yval2"></td>                    
+                </tr>
+                <tr>
+                    <td id="sl1">3</td>
+                    <td><input type="text" name="comp3" id="comp3"></td>
+                    <td><input type="number" name="base3" id="base3"></td>
+                    <td><input type="number" name="height3" id="height3"></td>
+                    <td><input type="number" name="xval3" id="xval3"></td>
+                    <td><input type="number" name="yval2" id="yval3"></td>                    
+                </tr>
+                <tr>
+                    <td id="sl1">4</td>
+                    <td><input type="text" name="comp4" id="comp4"></td>
+                    <td><input type="number" name="base4" id="base4"></td>
+                    <td><input type="number" name="height4" id="height4"></td>
+                    <td><input type="number" name="xval4" id="xval4"></td>
+                    <td><input type="number" name="yval4" id="yval4"></td>                    
+                </tr>
+                <tr>
+                    <td id="sl1">5</td>
+                    <td><input type="text" name="comp5" id="comp5"></td>
+                    <td><input type="number" name="base5" id="base5"></td>
+                    <td><input type="number" name="height5" id="height5"></td>
+                    <td><input type="number" name="xval5" id="xval5"></td>
+                    <td><input type="number" name="yval5" id="yval5"></td>
+                </tr>
+            </table></div>
+            <button onclick="getInfo()">Submit</button>
+            <div id="centroid">
+                
+            </div>
+            <div id="cenans">
+
+            </div>
+            <div id="miosub">
+
+            </div>
+            <div id="moitable">
+
+            </div>
+            <div id="moi">
+
+            </div>
+        </main>
+        <footer>
+            &copy;Deepak D Nayak
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

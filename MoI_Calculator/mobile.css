@@ -1,0 +1,42 @@
+header>p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+table , th , td {
+    border: 1px solid black;
+}
+
+th {
+    font-size: 10px;
+}
+th,td {
+    padding: 2px 5px;
+}
+
+input {
+    width: 40px;
+}
+
+body {
+    padding: 10px;
+}
+
+div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: right;
+}
+
+button {
+    margin: 20px;
+}
+
+table {
+    width: 90%;
+}

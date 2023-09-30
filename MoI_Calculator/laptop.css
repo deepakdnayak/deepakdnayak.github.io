@@ -1,0 +1,35 @@
+header>p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+table , th , td {
+    border: 1px solid black;
+}
+
+th,td {
+    padding: 2px 5px;
+}
+
+input {
+    width: 80px;
+}
+
+body {
+    padding: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: right;
+}
+
+button {
+    margin: 20px;
+}
