@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Number System Convertor</h1>
+        <form>
+            <label for="decimal">Enter the Decimal :</label>
+            <input type="number" name="decimal" id="decimal">
+
+            <label for="decimal">Select the format :</label>
+            <select class="test" name="selection" id="selection">
+                <option value="Binary">Binary</option>
+                <option value="Octal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+            </select>
+
+            <input type="button" value="Convert" onclick="mainBegin()">
+        </form>
+        
+
+        <h2>Your answer is : <span id="solution">0</span></h2>
+    </div>
+</body>
+</html>
