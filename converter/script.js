@@ -39,7 +39,7 @@ const toBinary = (dec) => {
     let final = [];
     final.push(getRemain(dec));
     dec = getquotient(dec);
-    while(dec>1) {
+    while(dec>=1) {
         final.push(getRemain(dec));
         dec = getquotient(dec);
     }
@@ -61,7 +61,7 @@ const toOctal = (dec) => {
     let final = [];
     final.push(getRemain(dec));
     dec = getquotient(dec);
-    while(dec>7) {
+    while(dec>=7) {
         final.push(getRemain(dec));
         dec = getquotient(dec);
     }
