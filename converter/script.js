@@ -15,7 +15,7 @@ const toHexa = (dec) => {
     let final = [];
     final.push(getRemain(dec));
     dec = getquotient(dec);
-    while(dec>16) {
+    while(dec>=16) {
         final.push(getRemain(dec));
         dec = getquotient(dec);
     }
